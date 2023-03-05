@@ -1,10 +1,12 @@
 // For temperature in Fahrenheit use units=imperial
 // For temperature in Celsius use units=metric
 // const token = config.API_KEY;
+let API_KEY;
 const btn = document.querySelector('button');
 const cityInput = document.querySelector('#city');
 const main = document.querySelector('main');
 const unitSelect = document.querySelector('.unit');
+
 
 async function getWeather() {
   try {
