@@ -1,7 +1,7 @@
 // For temperature in Fahrenheit use units=imperial
 // For temperature in Celsius use units=metric
 // const token = config.API_KEY;
-let API_KEY;
+const token = API_KEY;
 const btn = document.querySelector('button');
 const cityInput = document.querySelector('#city');
 const main = document.querySelector('main');
@@ -12,7 +12,7 @@ async function getWeather() {
   try {
     city = cityInput.value;
     units = unitSelected();
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=${units}`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${token}&units=${units}`)
 
     const cityData = await response.json();
     displayWeatherData(cityData);
