@@ -3,7 +3,7 @@
 
 // const API_KEY = config.API_KEY;
 
-const API_KEY = GITHUB_TOKEN.API_KEY;
+const API_KEY = API_KEY;
 const btn = document.querySelector('button');
 const cityInput = document.querySelector('#city');
 const main = document.querySelector('main');
